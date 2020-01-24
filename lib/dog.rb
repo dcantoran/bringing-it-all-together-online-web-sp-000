@@ -68,4 +68,6 @@ class Dog
     DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", dog_name).map{|column_row| self.new_from_db(column_row)}.first
   end 
   
+  
+  
 end 
